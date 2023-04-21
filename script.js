@@ -1,14 +1,16 @@
 
 function getComputerChoice() {
-    let x = Math.floor(Math.random() * 3);
-    if (x == 0) {
+    let compChoice = Math.floor(Math.random() * 3);
+    if (compChoice === 0) {
         return "Rock";
-    } else if (x == 1) {
+    } else if (compChoice === 1) {
         return "Paper";
     } else {
         return "Scissors"
     }         
 };
+
+console.log (getComputerChoice())
 
 function playRound(playerSelection, computerSelection) {
 
@@ -17,4 +19,4 @@ function playRound(playerSelection, computerSelection) {
 const playerSelection = "rock";
 const computerSelection = getComputerChoice();
 
-console.log (playRound(playerSelection, computerSelection));
+//console.log (playRound(playerSelection, computerSelection));
