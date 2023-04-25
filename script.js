@@ -17,11 +17,16 @@ function getComputerChoice() {
 
 function playRound(playerSelection, computerSelection) {
     let playerSelection = prompt("Choose your fighter! Rock, Paper, Scissors?");
+    if (playerSelection == Rock) {
+        playerSelection = 0;
+    }
 }
 
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-
 console.log (playRound())
+
+
+//const playerSelection = "rock";
+//const computerSelection = getComputerChoice();
+
 
 //console.log (playRound(playerSelection, computerSelection));
