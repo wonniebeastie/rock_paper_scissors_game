@@ -4,30 +4,28 @@
 function getComputerChoice() {
     let compChoice = Math.floor(Math.random() * 3);
     if (compChoice === 0) {
-        return "ROCK";
+        return "Rock";
     } else if (compChoice === 1) {
-        return "PAPER";
+        return "Paper";
     } else {
-        return "SCISSORS"
+        return "Scissors"
     }         
-};
+}
 
 
 //#4 & 5 odin 
 
 function playRound(playerSelection, computerSelection) {
-    //1
-    //player chooses rock paper or scissors
-    //maybe convert to uppercase later?
-    
+    playerSelection = playerSelection.toLowerCase();
+    console.log (playerSelection);
+    computerSelection = computerSelection.toLowerCase();
+    console.log (computerSelection);
 
+    if (playerSelection === computerSelection) {
+        return "It's a tie!"
+    }
 }
 
-console.log (playRound())
+let computerSelection = getComputerChoice();
 
-
-//const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-
-
-//console.log (playRound(playerSelection, computerSelection));
+console.log (playRound("roCK", computerSelection));
