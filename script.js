@@ -1,5 +1,5 @@
 
-//#3 odin
+//#3 
 
 let compChoice;
 
@@ -14,12 +14,21 @@ function getComputerChoice() {
     }         
 }
 
-//#4 & 5 odin 
+//6
 
-let computerSelection; 
+//let playerChoice;
+
+//function getPlayerChoice() {
+   // playerChoice = 
+//}
+
+//#4 & 5 
+
+let playerSelection, computerSelection; 
 
 function playRound(playerSelection, computerSelection) {
 
+    playerSelection = prompt("Choose your fighter! Rock, Paper, or Scissors?");
     computerSelection = getComputerChoice();
 
     playerSelection = playerSelection.toLowerCase();
@@ -50,14 +59,10 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
+ console.log (playRound());
 
 
- console.log (playRound("SciSsors", computerSelection));
-
-
-//#6 odin
-
-// let playerSelection = 
+//#6 
 
 function game() {
     
