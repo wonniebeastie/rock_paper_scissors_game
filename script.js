@@ -56,6 +56,8 @@ function playRound(playerSelection, computerSelection) {
 
 //#6 
 
+let playerInput;
+
 function game() {
-    
+    playerInput = prompt("Choose your fighter! Rock, Paper, or Scissors?");
 }
