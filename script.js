@@ -1,8 +1,10 @@
 
 //#3 odin
 
+let compChoice;
+
 function getComputerChoice() {
-    let compChoice = Math.floor(Math.random() * 3);
+    compChoice = Math.floor(Math.random() * 3);
     if (compChoice === 0) {
         return "Rock";
     } else if (compChoice === 1) {
@@ -12,10 +14,14 @@ function getComputerChoice() {
     }         
 }
 
-
 //#4 & 5 odin 
 
+let computerSelection; 
+
 function playRound(playerSelection, computerSelection) {
+
+    computerSelection = getComputerChoice();
+
     playerSelection = playerSelection.toLowerCase();
     console.log (playerSelection);
     computerSelection = computerSelection.toLowerCase();
@@ -42,10 +48,17 @@ function playRound(playerSelection, computerSelection) {
     } else {
         return "You lose! Rock smashes Scissors!"
     }
-
-    //let displayMessage = `You ${}! ${} beats ${}!`
 }
 
-let computerSelection = getComputerChoice();
 
-console.log (playRound("SciSsors", computerSelection));
+
+ console.log (playRound("SciSsors", computerSelection));
+
+
+//#6 odin
+
+// let playerSelection = 
+
+function game() {
+    
+}
