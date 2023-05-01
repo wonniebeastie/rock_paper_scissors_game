@@ -6,34 +6,26 @@ let compChoice;
 function getComputerChoice() {
     compChoice = Math.floor(Math.random() * 3);
     if (compChoice === 0) {
-        return "Rock";
+        return "rock";
     } else if (compChoice === 1) {
-        return "Paper";
+        return "paper";
     } else {
-        return "Scissors"
+        return "scissors"
     }         
 }
 
-//6
-
-//let playerChoice;
-
-//function getPlayerChoice() {
-   // playerChoice = 
-//}
 
 //#4 & 5 
 
-let playerSelection, computerSelection; 
+let computerSelection; 
 
 function playRound(playerSelection, computerSelection) {
 
-    playerSelection = prompt("Choose your fighter! Rock, Paper, or Scissors?");
     computerSelection = getComputerChoice();
 
     playerSelection = playerSelection.toLowerCase();
     console.log (playerSelection);
-    computerSelection = computerSelection.toLowerCase();
+
     console.log (computerSelection);
 
     if (playerSelection === computerSelection) {
@@ -59,7 +51,7 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
- console.log (playRound());
+ console.log (playRound ("scissoRs", computerSelection));
 
 
 //#6 
