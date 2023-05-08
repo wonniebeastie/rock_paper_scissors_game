@@ -23,7 +23,7 @@ function getComputerChoice() {
 function playRound(playerSelection, computerSelection) {
 
     if (playerSelection === computerSelection) {
-        return "It's a tie!";
+        return "It's a tie! Try again.";
 
         //player wins
 
@@ -55,8 +55,15 @@ function game() {
     let playerChoice = playerInput.toLowerCase();
     let computerChoice = getComputerChoice();
 
+    let playerScore = "Player Score: " + 0;
+    let computerScore = "Computer Score: " + 0;
+
+    console.log (playerScore);
+    console.log(computerScore);
+
     console.log (playerChoice);
     console.log (computerChoice);
+
 
     if (playerChoice === "rock" ||
         playerChoice === "paper" ||
@@ -65,6 +72,15 @@ function game() {
         let gameResult = playRound(playerChoice, computerChoice);
         return gameResult;
       }
+
+
+    if (gameResult === "It's a tie! Try again.") {
+       
+    } 
+
+    if (gameResult.includes("You win!")) {
+
+    }
 
 }
 
